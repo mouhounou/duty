@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+header{
+    background-color: rgb(41, 160, 215);
+    padding: 16px 4px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+#text {
+background-size: cover;
+height: 45px;
+margin: 35px;
+position: relative;
+}
+
+main{
+    background-image: url(./res/image_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    padding-left: 50px;
+    height: 400px;
+}
+
+main #text{
+    width: 430px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.531);
+    padding: 10px;
+    line-height: 1.7;
+    font-weight: 600;
+    
+}
+
+.menu{
+    padding-top: 90px;
+}
+
+.menu .flexible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexible img{
+    position: relative;
+    left: -100px;
+}
+
+.flexible p{
+    width: 800px;
+    background-color: rgb(6, 182, 182);
+    padding: 17px;
+    line-height: 1.3;
+}
+
+.line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.line  hr{
+    flex: 30%;
+}
+
+.line p{
+    background-color: black ;
+    color: white;
+    text-transform: uppercase;
+    width: 250px;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px 0;
+
+}
+
+.h{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.h .centrer{
+    margin-top: 20px;
+    height: 300px;
+    width: 1px;
+    height: 200px;
+    background-color: rgb(57, 55, 55);
+}
+
+
+.hs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+    position: relative;
+    display: flex;
+}
+
+.second .cercl{
+    position: absolute;
+    width: 220px;
+    height: 1px;
+    background-color: black;
+    left: 0px;
+    top: 0;
+
+}
+
+.h .cent{
+    margin-top: 0;
+}
+
+.second img{
+    position: absolute;
+    left: 500px;
+    bottom: -60px;
+}
+
+.h .cer{
+    width: 30px;
+    height: 30px;
+    border: 1px  solid black;
+    border-radius: 50%;
+}
+
+.end .cercl{
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    margin-top: 70px;
+}
+
+.gauche .second{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius:50% ;
+}
+.gauche .cercl{
+    top: 15px;
+    left: -220px;
+}
+
+.quality{
+    width: 240px;
+    position: absolute;
+    top: 162vh;
+    right: 16%;
+    border: 2px solid rgb(52, 25, 25);
+    padding: 8px;
+}
+
+.quality p{
+    padding: 6px;
+}
+.quality div{
+    display: flex;
+    justify-content: center;
+
+}
+
+.quality .h4{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(15, 15, 15);
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.ended{
+    top: 234vh;
+    right: 15%;
+    border:3px solid greenyellow ;
+}
+
+.midle{
+    top: 196vh;
+    right: 0;
+    left: 15%;
+    border:3px solid rgb(3, 218, 207) ;
+}
+
+@media screen and (max-width: 490px) {
+    main{
+        background-image: none;
+        background-color: rgb(4, 99, 90);
+        padding-left: 10px;
+    }
+
+    .menu .flexible img, .hs .second img{
+        display: none;
+    }
+}
+
+@media screen and (min-width:421px) and (max-width: 720px) {
+    main{
+        background-image: none;
+        background-color: rgb(4, 99, 90);
+        padding-left: 10px;
+    }
+
+    #text{
+        margin: 9px;
+    }
+
+    .second img{
+        
+        left: 300px;
+        bottom: -70px;
+    }
+
+    .end .cercl{
+        display: none;
+    }
+
+    .midle{
+        top: 200vh;
+        right: 0;
+        left: 5%;
+    }
+
+    
+
+}
